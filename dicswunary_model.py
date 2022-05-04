@@ -192,3 +192,8 @@ prediction
 
 
 
+pip install coremltools
+
+import coremltools
+coreml_model = coremltools.converters.convert('./dicswunary.h5')
+coreml_model.save('./dicswunary.mlmodel')
